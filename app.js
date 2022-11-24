@@ -25,7 +25,7 @@ app.post('/send', (req, res) => {
 
   var mailOptions = {
     from,
-    to: sendTo,
+    to: sendTo || to,
     subject,
     text: `From: ${name} <${clientEmail}>\nSubject: ${subject} 📌\nMessage: ${message}`,
   };
