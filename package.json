@@ -1,0 +1,28 @@
+{
+  "name": "email-sender",
+  "version": "1.0.0",
+  "description": "node.js app to send eamil using google email",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "email",
+    "forgot",
+    "password",
+    "welcome",
+    "email",
+    "reset",
+    "password"
+  ],
+  "author": "Mohamed Yasser",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
