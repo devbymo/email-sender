@@ -11,7 +11,7 @@ const pass = process.env.password;
 const to = process.env.to;
 const service = process.env.service; // e.g. gmail
 
-app.post('/email/send', (req, res) => {
+app.post('/send', (req, res) => {
   const { sendTo, clientEmail, subject, message, name } = req.body;
 
   var transporter = nodemailer.createTransport({
