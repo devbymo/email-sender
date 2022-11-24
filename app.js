@@ -1,11 +1,13 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(cors());
 
 const from = process.env.from;
 const pass = process.env.password;
